@@ -1,10 +1,15 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 const index = () => {
   return (
-    <section>
-      <Navbar collapseOnSelect expand="md" className="justify-content-between">
+    <Container>
+      <Navbar
+        fixed="top"
+        collapseOnSelect
+        expand="md"
+        className="justify-content-between"
+      >
         <Navbar.Brand href="#home">Brand link</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
@@ -29,7 +34,7 @@ const index = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </section>
+    </Container>
   );
 };
 
