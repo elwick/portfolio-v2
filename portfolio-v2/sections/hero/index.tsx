@@ -1,30 +1,23 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
+import { ViewHeightContainer } from "../../components";
 import { styled } from "../../styles/defaultTheme";
 
-const index = () => {
-  return (
-    <ViewHeightContainer>
-      <RowWithMargin>
-        <Col>
-          <Name>
-            Nick <span>Elwick</span>
-          </Name>
-          <JobTitle>Front End Engineer</JobTitle>
-        </Col>
-        <Col>
-          <Button>Download CV</Button>
-        </Col>
-      </RowWithMargin>
-    </ViewHeightContainer>
-  );
-};
-
-const ViewHeightContainer = styled(Container)`
-  @media only screen and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    min-height: 100vh;
-  }
-`;
+const index = () => (
+  <ViewHeightContainer>
+    <RowWithMargin>
+      <Col sm={12} lg={6}>
+        <Name>
+          Nick <span>Elwick</span>
+        </Name>
+        <JobTitle>Front End Engineer</JobTitle>
+      </Col>
+      <Col sm={12} lg={6}>
+        <Button>Download CV</Button>
+      </Col>
+    </RowWithMargin>
+  </ViewHeightContainer>
+);
 
 const RowWithMargin = styled(Row)`
   margin-top: 20%;
