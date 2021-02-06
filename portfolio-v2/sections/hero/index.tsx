@@ -1,22 +1,22 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
-import { ViewHeightContainer } from "../../components";
+import { Container, H4JobTitle } from "../../components";
 import { styled } from "../../styles/defaultTheme";
 
 const index = () => (
-  <ViewHeightContainer>
+  <Container>
     <RowWithMargin>
       <Col sm={12} lg={6}>
         <Name>
           Nick <span>Elwick</span>
         </Name>
-        <JobTitle>Front End Engineer</JobTitle>
+        <H4JobTitle>Front End Engineer</H4JobTitle>
       </Col>
       <Col sm={12} lg={6}>
         <Button>Download CV</Button>
       </Col>
     </RowWithMargin>
-  </ViewHeightContainer>
+  </Container>
 );
 
 const RowWithMargin = styled(Row)`
@@ -50,16 +50,6 @@ const Name = styled.h1`
     display: block;
     -webkit-text-stroke: transparent;
   }
-`;
-
-const JobTitle = styled.h4`
-  color: #333;
-  font-size: 15px;
-  line-height: 2.1;
-  letter-spacing: 0.8px;
-  font-weight: 600;
-  display: inline-block;
-  padding-top: 10px;
 `;
 
 export default index;

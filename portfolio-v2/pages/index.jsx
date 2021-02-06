@@ -9,7 +9,6 @@ import Footer from "../sections/footer";
 import Hero from "../sections/hero";
 import Navigation from "../sections/navigation";
 import Work from "../sections/work";
-import { theme } from "../styles/defaultTheme";
 
 export default function Home() {
   return (
